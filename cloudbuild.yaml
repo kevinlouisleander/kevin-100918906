@@ -1,5 +1,5 @@
 steps:
-  # Build the Docker image
+  # Build the Docker image kevin
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'us-central1-docker.pkg.dev/analog-context-413503/kevinleander/nodejs-app:${COMMIT_SHA}', '.']
   # Push the Docker image to the artifact registry
